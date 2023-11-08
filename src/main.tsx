@@ -4,11 +4,13 @@ import { Provider } from "react-redux"
 import { store } from "./app/store"
 import App from "./App"
 import "./index.css"
+// eslint-disable-next-line import/order
+import { BrowserRouter } from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <Provider store={store}>
+     <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </BrowserRouter>
+     </Provider>
 )

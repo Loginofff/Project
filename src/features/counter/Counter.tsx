@@ -1,6 +1,5 @@
-import { useState } from "react"
-
-import { useAppSelector, useAppDispatch } from "../../app/hooks"
+import { useState } from "react";
+import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import {
   decrement,
   increment,
@@ -9,8 +8,7 @@ import {
   incrementIfOdd,
   selectCount,
 } from "./counterSlice"
-import styles from "./Counter.module.css"
-
+import styles from "./Counter.module.css";
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function Counter() {
   const count = useAppSelector(selectCount)
